@@ -1,4 +1,5 @@
 body {
+  background-color: #f884ee;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #333;
   font-size: 14px;
@@ -3155,6 +3156,10 @@ img {
 
 .modal-wrapper.show {
   z-index: 999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .div-block-115 {
@@ -3603,7 +3608,7 @@ img {
 
 .submit-button {
   margin-top: 20px;
-  padding: 10px 40px;
+  padding: 10px 20px;
   border-radius: 20px;
   background-color: #ece71f;
   font-family: base-mono-wide, sans-serif;
@@ -3718,6 +3723,124 @@ img {
   color: #282828;
   font-size: 20px;
   font-style: normal;
+}
+
+.div-block-123 {
+  width: 100%;
+  height: 100%;
+}
+
+.heading-29 {
+  margin-bottom: 40px;
+  font-family: base-mono-wide, sans-serif;
+  color: #ece71f;
+  text-align: center;
+}
+
+.paragraph-15 {
+  font-family: base-mono-wide, sans-serif;
+  color: #282828;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.div-block-124 {
+  width: 60%;
+  margin-bottom: 100px;
+}
+
+.body-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.link-15 {
+  color: #ece71f;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.link-15:hover {
+  color: #ece71f;
+}
+
+.div-block-125 {
+  width: 80%;
+  padding-top: 40px;
+  font-family: base-mono-wide, sans-serif;
+}
+
+.body-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 100px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.paragraph-16 {
+  font-family: Helveticaneuelt, sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.text-block-31 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.heading-30 {
+  margin-bottom: 40px;
+  font-size: 45px;
+}
+
+.div-block-126 {
+  margin-bottom: 40px;
+}
+
+.bold-text-21 {
+  font-family: Helveticaneuemed, sans-serif;
+}
+
+.button-5 {
+  margin-top: 20px;
+  padding: 10px 40px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  border-radius: 40px;
+  background-color: #ece71f;
+  font-family: base-mono-wide, sans-serif;
+  color: #282828;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.button-5:hover {
+  color: #282828;
 }
 
 @media screen and (min-width: 1280px) {
@@ -5527,6 +5650,49 @@ img {
     outline-style: none;
     outline-width: 5px;
   }
+
+  .submit-button {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .form {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  .div-block-122 {
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  .link-15 {
+    font-size: 18px;
+  }
+
+  .link-15:hover {
+    outline-color: #ed3e3a;
+    outline-offset: 10px;
+    outline-style: none;
+    outline-width: 5px;
+    color: #ece71f;
+  }
+
+  .button-5:hover {
+    outline-color: #ed3e3a;
+    outline-offset: 10px;
+    outline-style: none;
+    outline-width: 5px;
+  }
+
+  .form-2 {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -5704,6 +5870,10 @@ img {
     font-size: 40px;
     line-height: 60px;
   }
+
+  .div-block-124 {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -5868,6 +6038,13 @@ img {
 
   .modal-wrapper.congrats {
     display: none;
+  }
+
+  .modal-wrapper.show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .text-block-15.otp {
@@ -6492,10 +6669,7 @@ img {
     right: 0%;
     bottom: 0%;
     z-index: 999;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -6698,6 +6872,14 @@ img {
 
   .div-block-122 {
     width: 80%;
+  }
+
+  .paragraph-15 {
+    font-size: 15px;
+  }
+
+  .div-block-124 {
+    margin-bottom: 20px;
   }
 }
 
