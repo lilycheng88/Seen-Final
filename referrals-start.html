@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Sun Mar 12 2023 23:22:08 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Mon Mar 13 2023 16:16:05 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="640b8ea9a20aa195b5798cab" data-wf-site="640b8ea9a20aa17fd7798ca1">
 <head>
   <meta charset="utf-8">
@@ -194,10 +194,14 @@ input {
 }
 </style>
   <script>
-// X Friends Have Joined
-const friendCount = 5; // BACKEND
-const friendCountElement = document.getElementById("friend-count");
-friendCountElement.textContent = friendCount;
+function updateFriends() {
+	var numFriends = 0; //GET FROM BACKEND
+  var secondPart =  " Friends Have Used Your Link!";
+  document.getElementById('friend-count').innerText = numFriends + secondPart;
+//THIS WORKS!
+//  var newFileName = "https://uploads-ssl.webflow.com/5f9a1cc3e7fd85948e5ca86e/64051168a68c026a9dcf5c74_tiktok.png";
+//	document.getElementById('progress-bar-hori').src = newFileName;
+}
 // Countdown: Original Pen by Matt Smith 
 const second = 1000,
       minute = second * 60,
@@ -257,14 +261,19 @@ function copyText() {
       };
       window.onload = function() {
 			var raffleTickets = 7; //GET FROM BACKEND
-			var image = document.getElementById("raffle-image");
-			if (raffleTickets >= 10) {
-				image.src = "20.png";
-			} else if (raffleTickets >= 5) {
-				image.src = "05.png";
-			} else {
-				image.src = "00.png";
-			}
+			var imageHorizontal = document.getElementById("raffle-image-hor");
+      var imageVertical = document.getElementById("raffle-image-ver");
+      const stringFileHor = "images/Hor_0" + raffleTickets + ".png";
+      const stringFileVer = "images/Ver_0" + raffleTickets + ".png";
+      imageHorizontal.src = stringFileHor;
+      imageVertical.src = stringFileVer;
+			//if (raffleTickets >= 10) {
+			//	image.src = "images/20.png";
+			//} else if (raffleTickets >= 5) {
+			//	image.src = "images/05.png";
+			//} else {
+			//	image.src = "images/00.png";
+			//}
 		}
 function clickEvent(first,last){
       if(first.value.length){
@@ -340,11 +349,12 @@ function clickEvent(first,last){
       <button class="buttonToShare" onclick="copyText()">COPY</button>
       <div class="copiedMessage" id="copy-message"></div>
     </div>
-    <div class="div-block-117"><img src="images/Hor_00.png" loading="lazy" width="1033" sizes="(max-width: 479px) 0px, (max-width: 767px) 100vw, 80vw" srcset="images/Hor_00-p-500.png 500w, images/Hor_00-p-800.png 800w, images/Hor_00-p-1080.png 1080w, images/Hor_00-p-1600.png 1600w, images/Hor_00-p-2000.png 2000w, images/Hor_00.png 2500w" alt="" class="image-46">
+    <div class="div-block-117">
       <div>
-        <div class="html-embed-12 w-embed">
-          <p><span id="friend-count">0</span> Friends Have Used Your Link!</p>
+        <div class="html-embed-12 w-embed"><img id="progress-bar-hori" src="https://uploads-ssl.webflow.com/5f9a1cc3e7fd85948e5ca86e/6405606e0d34774a88437686_Asset%2061.png">
+          <body id="friend-count-new" onload="updateFriends();"></body>
         </div>
+        <div id="friend-count" class="text-block-33"></div>
       </div>
     </div>
     <div>
@@ -353,12 +363,12 @@ function clickEvent(first,last){
           <div class="html-embed-12 w-embed">
             <p class="friendCountVertText"><span id="friend-count-vertical">0</span> Friends Have Used Your Link!</p>
           </div>
-        </div><img src="images/Ver_00.png" loading="lazy" width="289" sizes="(max-width: 479px) 100vw, (max-width: 767px) 64vw, 100vw" id="raffle-image" srcset="images/Ver_00-p-500.png 500w, images/Ver_00-p-800.png 800w" alt="" class="image-42">
+        </div><img src="images/Ver_00.png" loading="lazy" width="289" sizes="(max-width: 479px) 100vw, (max-width: 767px) 64vw, 100vw" id="raffle-image-ver" srcset="images/Ver_00-p-500.png 500w, images/Ver_00-p-800.png 800w" alt="" class="image-42">
       </div>
       <div class="div-block-106"></div>
     </div><img src="images/Group-33.png" loading="lazy" width="1130" sizes="100vw" srcset="images/Group-33-p-500.png 500w, images/Group-33-p-800.png 800w, images/Group-33-p-1080.png 1080w, images/Group-33-p-1600.png 1600w, images/Group-33-p-2000.png 2000w, images/Group-33-p-2600.png 2600w, images/Group-33-p-3200.png 3200w" alt="" class="image-49">
     <div class="div-block-106">
-      <div class="text-block-14 prizesinfo"><strong class="bold-text-16">Come back </strong>to check how many friends have signed up with your link.<br>‍<strong class="bold-text-11"><br>Raffle Winners</strong> and <strong class="bold-text-10">April Prizes </strong>will be announced in..<strong class="bold-text-9"></strong>.<br></div>
+      <div class="text-block-14 prizesinfo"><strong class="bold-text-16">Come back </strong>to check how many friends have signed up with your link.<br>‍<strong class="bold-text-11"><br>Raffle Winners</strong>  will be announced in..<strong class="bold-text-9"></strong>.<br></div>
       <div class="div-block-116">
         <div class="time">
           <div id="days" class="text-block-20">0</div>
@@ -415,7 +425,7 @@ function clickEvent(first,last){
       <div class="accordion-wrapper-2">
         <div class="accordion-item-2">
           <div class="accordion-item-trigger-2">
-            <div class="question-2 paragraph-14">Q: What happens to my referrals each month?</div>
+            <div class="question-2 paragraph-14">Q: What happens to my referrals each round?</div>
             <div class="div-block-118 w-clearfix"><img src="images/Asset-1.svg" width="43" alt="" class="down-arrow-2"><img src="images/Asset-2.svg" loading="lazy" alt="" class="image-47"></div>
           </div>
           <div class="accordion-item-content-2">
@@ -430,7 +440,7 @@ function clickEvent(first,last){
             <div class="div-block-118 w-clearfix"><img src="images/Asset-1.svg" width="43" alt="" class="down-arrow-2"><img src="images/Asset-2.svg" loading="lazy" alt="" class="image-47"></div>
           </div>
           <div class="accordion-item-content-2">
-            <p class="answer paragraph-14">A: For our March prizes, we&#x27;re offering three prize categories: Airpod Pros, Airpod Max, and a $200 Marvel Bundle (including a Lego gauntlet, the entire cinematic universe, and a $50 AMC gift card). Prizes 1, 2, and 3 update each month.<strong><br></strong></p>
+            <p class="answer paragraph-14">A: For our March prizes, we&#x27;re offering three prize categories: Airpod Pros, Airpod Max, and a $200 Marvel Bundle (including a Lego gauntlet, the entire cinematic universe, and a $50 AMC gift card). Prizes 1, 2, and 3 update each round (our next round of prizes will be released on a TBD date).<strong><br></strong></p>
           </div>
         </div>
       </div>
@@ -441,7 +451,7 @@ function clickEvent(first,last){
             <div class="div-block-118 w-clearfix"><img src="images/Asset-1.svg" width="43" alt="" class="down-arrow-2"><img src="images/Asset-2.svg" loading="lazy" alt="" class="image-47"></div>
           </div>
           <div class="accordion-item-content-2">
-            <p class="answer paragraph-14">A: You can track your referrals by logging into your referral program account: seen.video/login.<strong><br></strong></p>
+            <p class="answer paragraph-14">A: You can track your referrals by re-entering your phone number on our home page, <a href="https://www.seen.video/" class="link-16">seen.video</a>. Our system will ask you to verify your login via email so you can access your account.<strong><br></strong></p>
           </div>
         </div>
       </div>
@@ -452,7 +462,7 @@ function clickEvent(first,last){
             <div class="div-block-118 w-clearfix"><img src="images/Asset-1.svg" width="43" alt="" class="down-arrow-2"><img src="images/Asset-2.svg" loading="lazy" alt="" class="image-47"></div>
           </div>
           <div class="accordion-item-content-2">
-            <p class="answer paragraph-14">A: We will announce the winners on our social media platforms and will also notify the winners via email by April 8th. Our new cycle of prizes will be posted then as well. <br><br>The Grand Prize winner will be announced in May.<br><br><strong><br></strong></p>
+            <p class="answer paragraph-14">A: We will announce the winners on our social media platforms and will also notify the winners via email by April 14th.<br><br>The Grand Prize winner will be announced in May.<br><br><strong><br></strong></p>
           </div>
         </div>
       </div>

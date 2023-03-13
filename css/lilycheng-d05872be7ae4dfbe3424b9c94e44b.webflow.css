@@ -3046,7 +3046,7 @@ img {
   right: 0%;
   bottom: 0%;
   display: block;
-  padding-top: 140px;
+  padding-top: 100px;
   background-color: #f884ee;
 }
 
@@ -3962,6 +3962,22 @@ img {
 
 .image-49 {
   width: 100%;
+}
+
+.link-16 {
+  color: #f884ee;
+}
+
+.link-16:hover {
+  color: #f884ee;
+}
+
+.text-block-33 {
+  margin-top: 20px;
+  font-family: base-mono-wide, sans-serif;
+  color: #f884ee;
+  font-size: 22px;
+  text-align: center;
 }
 
 @media screen and (min-width: 1280px) {
@@ -6759,9 +6775,7 @@ img {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding-right: 10%;
-    padding-bottom: 30px;
-    padding-left: 10%;
+    padding: 100px 10% 30px;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -6889,6 +6903,10 @@ img {
     align-items: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.73)), to(rgba(0, 0, 0, 0.73)));
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73));
+  }
+
+  .modal-wrapper.dontshow {
+    display: none;
   }
 
   .div-block-115 {
@@ -7071,6 +7089,8 @@ img {
     top: 0%;
     right: 0%;
     bottom: auto;
+    overflow: visible;
+    width: 85%;
   }
 
   .linkseen:hover {
