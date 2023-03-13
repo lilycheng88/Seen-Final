@@ -6036,6 +6036,18 @@ img {
     margin-bottom: 40px;
   }
 
+  .bold-text-23 {
+    font-size: 16px;
+  }
+
+  .bold-text-23:hover {
+    opacity: 1;
+    outline-color: #f884ee;
+    outline-offset: 0px;
+    outline-style: none;
+    outline-width: 0px;
+  }
+
   .headingshare-2 {
     margin-top: 25px;
   }
@@ -6069,6 +6081,26 @@ img {
 
   .heading-33 {
     margin-top: 200px;
+  }
+
+  .link-18 {
+    outline-color: #2e6e6d;
+    outline-offset: 0px;
+    outline-style: none;
+    outline-width: 3px;
+    color: #f884ee;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .link-18:hover {
+    border-style: none;
+    outline-color: #2e6e6d;
+    outline-offset: 0px;
+    outline-style: none;
+    outline-width: 3px;
+    color: #f884ee;
+    font-size: 20px;
   }
 }
 
