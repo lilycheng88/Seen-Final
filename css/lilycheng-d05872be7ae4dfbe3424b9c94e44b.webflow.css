@@ -6032,6 +6032,17 @@ img {
     align-items: center;
   }
 
+  .link-16 {
+    font-size: 16px;
+  }
+
+  .link-16:hover {
+    outline-color: #ed3e3a;
+    outline-offset: 10px;
+    outline-style: none;
+    outline-width: 5px;
+  }
+
   .html-embed-14 {
     margin-bottom: 40px;
   }
