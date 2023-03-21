@@ -4198,6 +4198,21 @@ img {
   text-align: center;
 }
 
+.div-block-138 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  height: 5vh;
+  background-color: #ece71f;
+  font-family: base-mono-wide, sans-serif;
+  color: #282828;
+  font-size: 16px;
+  line-height: 5vh;
+  text-align: center;
+}
+
 @media screen and (min-width: 1280px) {
   p {
     line-height: 100px;
@@ -5976,10 +5991,7 @@ img {
   }
 
   .modal-wrapper.dontshow {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
   }
 
   .bold-text-20 {
@@ -6206,6 +6218,12 @@ img {
 
   .form-block {
     width: 90%;
+  }
+
+  .div-block-138 {
+    background-color: #ece71f;
+    color: #282828;
+    font-size: 16px;
   }
 }
 
@@ -7978,6 +7996,10 @@ img {
   .text-block-39 {
     padding-right: 10%;
     padding-left: 10%;
+  }
+
+  .div-block-138 {
+    font-size: 70%;
   }
 }
 
